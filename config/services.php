@@ -31,4 +31,13 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'coinbase' => [
+        'base_url'          => env('COINBASE_BASE_URL', 'https://api.commerce.coinbase.com/'),
+        'api_key'           => env('COINBASE_API_KEY', 'coinbase_api_key'),
+        'charge_currency'   => env('COINBASE_CHARGE_CURRENCY', 'USD'),
+        'pricing_types'     => [
+            'fixed_price'   => env('COINBASE_FIXED_PRICING', 'fixed_price')
+        ]
+    ],
+
 ];
